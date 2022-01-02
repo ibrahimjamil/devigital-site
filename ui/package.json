@@ -1,0 +1,35 @@
+{
+    "name": "nextjs",
+    "version": "5.0.0",
+    "private": true,
+    "dependencies": {
+        "@apollo/client": "^3.5.5",
+        "@emotion/cache": "latest",
+        "@emotion/react": "latest",
+        "@emotion/server": "latest",
+        "@emotion/styled": "latest",
+        "@material-ui/core": "^4.12.3",
+        "@material-ui/icons": "^4.11.2",
+        "@mui/icons-material": "^5.2.0",
+        "@mui/material": "latest",
+        "apollo-upload-client": "^16.0.0",
+        "clsx": "latest",
+        "next": "latest",
+        "prop-types": "latest",
+        "react": "latest",
+        "react-dom": "latest",
+        "react-slick": "^0.28.1",
+        "uuid": "^8.3.2"
+    },
+    "scripts": {
+        "dev": "next",
+        "build": "next build",
+        "start": "next start",
+        "post-update": "echo \"codesandbox preview only, need an update\" && yarn upgrade --latest"
+    },
+    "devDependencies": {
+        "eslint": "^8.4.1",
+        "eslint-plugin-react": "^7.27.1",
+        "graphql": "^16.1.0"
+    }
+}

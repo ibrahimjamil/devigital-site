@@ -1,0 +1,53 @@
+{
+    "name": "@keystonejs/example-projects-blank",
+    "description": "A blank KeystoneJS starter project.",
+    "private": true,
+    "version": "5.0.21",
+    "author": "The KeystoneJS Development Team",
+    "repository": "https://github.com/keystonejs/keystone-5/tree/main/packages/create-keystone-5-app/example-projects/blank",
+    "homepage": "https://github.com/keystonejs/keystone-5",
+    "license": "MIT",
+    "engines": {
+        "node": "14.x"
+    },
+    "scripts": {
+        "dev": "cross-env NODE_ENV=development DISABLE_LOGGING=true PORT=5000 keystone dev",
+        "build": "cross-env NODE_ENV=production keystone build",
+        "start": "cross-env NODE_ENV=production DISABLE_LOGGING=true PORT=5000 keystone start",
+        "create-tables": "cross-env keystone create-tables",
+        "prepare": "husky install"
+    },
+    "dependencies": {
+        "@keystonejs/adapter-mongoose": "^11.2.2",
+        "@keystonejs/app-admin-ui": "^7.5.2",
+        "@keystonejs/app-graphql": "^6.3.2",
+        "@keystonejs/app-static": "^5.2.2",
+        "@keystonejs/auth-password": "^6.1.2",
+        "@keystonejs/file-adapters": "^7.1.2",
+        "@keystonejs/keystone": "^19.3.3",
+        "cross-env": "^7.0.3",
+        "dotenv": "^10.0.0",
+        "emailjs": "^3.7.0",
+        "emailjs-com": "^3.2.0",
+        "keystone": "^4.2.1",
+        "react-helmet": "^6.1.0"
+    },
+    "devDependencies": {
+        "eslint": "^7.32.0",
+        "eslint-config-prettier": "^8.3.0",
+        "eslint-config-standard": "^16.0.3",
+        "eslint-plugin-import": "^2.25.3",
+        "eslint-plugin-node": "^11.1.0",
+        "eslint-plugin-promise": "^5.1.1",
+        "eslint-plugin-react": "^7.27.1",
+        "husky": "^7.0.4",
+        "lint-staged": "^12.1.2",
+        "prettier": "^2.2.1"
+    },
+    "lint-staged": {
+        "*.{ts,tsx,js,jsx,css}": [
+            "eslint --fix --max-warnings 0",
+            "prettier --write"
+        ]
+    }
+}

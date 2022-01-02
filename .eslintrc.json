@@ -1,0 +1,30 @@
+{
+    "env": {
+        "browser": true,
+        "es2021": true,
+        "node": true
+    },
+    "extends": ["plugin:react/recommended", "standard", "prettier"],
+    "parserOptions": {
+        "ecmaFeatures": {
+            "jsx": true
+        },
+        "ecmaVersion": 2020,
+        "sourceType": "module"
+    },
+    "plugins": ["react"],
+    "rules": {
+        "no-debugger": "error",
+        "consistent-return": "error",
+        "linebreak-style": "off",
+        "react/forbid-prop-types": "warn",
+        "no-console": "error",
+        "react/no-array-index-key": "warn",
+        "react/prop-types": "off",
+        "react/jsx-uses-react": "error",
+        "react/jsx-uses-vars": "error",
+        "no-unused-vars": "error",
+        "react/react-in-jsx-scope": "off",
+        "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }]
+    }
+}
